@@ -1,0 +1,64 @@
+@import "constants";
+
+.captcha{
+  position: relative;
+  display: flex;
+  background-color: #434857!important;
+  border: 1px solid #434857!important;
+  padding: 0!important;
+  align-items: center;
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 2px 1px rgba(26, 36, 42, 0.37);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  .captchaImage {
+    svg {
+      height: 35px;
+      path {
+        fill: #fff!important;
+      }
+    }
+  }
+
+  .refresh-btn {
+    position: absolute;
+    /* padding: 0 0 0 50px; */
+    text-align: right;
+    transform: rotate(13deg);
+    cursor: pointer;
+    outline: none;
+    height: 20px;
+    width: 20px;
+    top: 8px;
+    right: 8px;
+
+
+    &.loading {
+      animation-name: spin!important;
+      animation-duration: 1000ms!important;
+      animation-iteration-count: infinite!important;
+      animation-timing-function: linear!important;
+    }
+    @keyframes spin {
+      from {
+        transform:rotate(0deg);
+      }
+      to {
+        transform:rotate(360deg);
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      z-index: 10;
+      width: 28px;
+      height: 26px;
+
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}

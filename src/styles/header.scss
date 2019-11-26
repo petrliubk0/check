@@ -1,0 +1,35 @@
+@import "constants";
+
+header {
+  background-color: $app-bg-black;
+  color: $app-grey;
+  .logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    //background-image: url("../static/logo.svg");
+    background-color: $app-white;
+    -webkit-mask-image: url("../static/logo.svg");
+    mask-image: url("../static/logo.svg");
+    width: 37px;
+    height: 37px;
+    float: left;
+  }
+  .user {
+    cursor: pointer;
+  }
+
+  nav {
+    .navbar-brand {
+      margin-left: 15px;
+      margin-right: 70px;
+    }
+    &.bg-dark {
+      background-color: $app-bg-black!important;
+    }
+  }
+
+  #lang {
+    //margin-left: 10px;
+    margin-right: 20px;
+  }
+}

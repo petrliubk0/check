@@ -1,0 +1,51 @@
+@import "constants";
+
+.container {
+  .fine-wrapper {
+    max-width: 700px;
+  }
+}
+
+.report {
+  max-width: 700px;
+  .loader {
+    margin: auto;
+  }
+  padding: 20px;
+  background-color: #1b1c21;
+  border-radius: 5px;
+  div {
+    span {
+      &:nth-child(2n-1) {
+        color: $app-white;
+      }
+    }
+    padding: 3px 0;
+  }
+
+  .av_list {
+
+
+    table {
+      thead {
+        color: $app-white;
+      }
+      tr {
+        td {
+          width: 150px;
+          padding: 5px 20px;
+
+          &.signature {
+            color: red;
+          }
+
+          &:nth-child(2) {
+            //text-align: right;
+          }
+        }
+
+      }
+    }
+  }
+
+}

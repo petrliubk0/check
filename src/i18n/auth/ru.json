@@ -1,0 +1,40 @@
+{
+  "forgot-token": "Забыли токен?",
+  "token": {
+    "": "token",
+    "Invalid field value": "Невалидный токен"
+  },
+  "signin": {
+    "login-button": "Войти"
+  },
+  "signup": {
+    "register-button": "Отправить",
+    "username-placeholder": "vasiliy",
+    "email-placeholder": "vasiliy@mail.com"
+  },
+  "email": {
+    "": "Емейл"
+  },
+  "username": {
+    "": "Имя пользователя",
+    "Invalid field value": "Невалидный юзернейм"
+  },
+  "contact": {
+    "Invalid field value": "Невалидный контакт"
+  },
+  "identifier-type": "Тип контакта",
+  "none": {
+    "": "Не выбрано"
+  },
+  "jabber": {
+    "": "Jabber"
+  },
+  "captcha": {
+    "": "Captcha",
+    "enter-captcha": "Введите captcha",
+    "enter-captcha-placeholder": "GdfSaX",
+    "Invalid field value": "Невалидная captcha",
+    "Wrong value": "Captcha не совпадает"
+  },
+  "Invalid token": "Невалидный токен"
+}

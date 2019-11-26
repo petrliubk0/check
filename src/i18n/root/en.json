@@ -1,0 +1,13 @@
+{
+    "drag-file": "Drag file here or click to select",
+    "auto-update-report": "Automatic report update",
+    "function-disabled": "This function is not available for unauthorized users",
+    "period-update": "Update period",
+    "file-name": "The selected file",
+    "choose-another-file": "Choose another file",
+    "first-operation": "Check until the first trigger",
+    "file": {
+        "Empty field": "File not chosen"
+    },
+    "auto-report-info": "During the selected time period, the report will be automatically updated. If the report results have changed (a signature has been found), you will receive a notification about this. The frequency of updating is selected by the system automatically, starting from objective events (for example, updating the anti-virus databases). For each such scan, an amount equal to the sum of a one-time scan for selected antiviruses will be charged from your balance."
+}

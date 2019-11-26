@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <title><%= __('reset-token') %> | <%= HOST %></title>
+    </head>
+</head>
+<body>
+<% include widgets/header.ejs %>
+<div class="container">
+    <div class="content d-flex justify-content-center">
+        <div class="fine-wrapper text-left">
+            <div class="app-title">
+                <h1 class="text-center">
+                    <%= __('reset-token') %>
+                </h1>
+            </div>
+
+            <div class="reset-token">
+                <%- __('reset-token-info') %>
+            </div>
+        </div>
+    </div>
+</div>
+<% include widgets/footer.ejs %>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "forgot-token": "Forgot token?",
+  "token": {
+    "": "token",
+    "Invalid field value": "Invalid token"
+  },
+  "signin": {
+    "login-button": "Go"
+  },
+
+  "signup": {
+      "register-button": "Register",
+      "username-placeholder": "john",
+      "email-placeholder": "john@mail.com"
+  },
+
+  "username": {
+      "": "Username",
+      "Invalid field value": "Invalid username"
+  },
+  "email": {
+    "": "Email",
+      "Invalid field value": "Invalid email"
+  },
+  "contact": {
+    "Invalid field value": "Invalid contact"
+  },
+  "identifier-type": "Contact type",
+  "none": {
+    "": "Not choose"
+  },
+
+  "captcha": {
+    "": "Captcha",
+    "enter-captcha": "Enter captcha",
+    "enter-captcha-placeholder": "GdfSaX",
+    "Invalid field value": "Invalid captcha",
+    "Wrong value": "Wrong captcha value"
+  },
+
+  "jabber": {
+    "": "Jabber"
+  }
+}

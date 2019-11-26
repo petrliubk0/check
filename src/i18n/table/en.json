@@ -1,0 +1,7 @@
+{
+    "completed": "Completed",
+    "part_completed": "Partially completed",
+    "pending": "Pending",
+    "payed": "Payed",
+    "canceled": "Canceled"
+}

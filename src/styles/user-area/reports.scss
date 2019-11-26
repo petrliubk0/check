@@ -1,0 +1,18 @@
+.reports {
+  margin: 20px;
+  width: 80%;
+  margin-left: 0;
+  p {
+    display: block !important;
+    .loader {
+      margin: 0 auto;
+    }
+  }
+  & > div {
+    padding: 20px;
+    padding-left: 40px;
+    .reports-table {
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= __('contacts-title') %> | Checkav</title>
+</head>
+<body>
+<% include widgets/header.ejs %>
+<div class="container">
+    <div class="content d-flex justify-content-center">
+        <div class="fine-wrapper text-left bg-semi-black">
+            <div class="app-title">
+                <h1 class="text-center">
+                    <%= __('contacts-title') %>
+                </h1>
+            </div>
+            <p>
+                <%- __('contacts-pretext') %>
+            </p>
+            <ul class="contacts-list">
+                <li class="mb-1"><span class="highlight bg-soft-black">Email: <a href="mailto:some@mail.com">some@mail.com</a></span></li>
+                <li><span class="highlight bg-soft-black">Jabber: <a href="mailto:some@jabber.com">some@jabber.com</a></span></li>
+            </ul>
+            <p>
+                <%- __('contacts-posttext') %>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

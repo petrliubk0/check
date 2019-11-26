@@ -1,0 +1,10 @@
+@import "constants";
+
+footer {
+  background-color: $app-bg-black;
+  color: $app-grey;
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  padding-top: 45px;
+}

@@ -1,0 +1,157 @@
+@import "constants";
+$disabled-color: rgba(148,151,152,0.16078);
+
+
+.container {
+  .fine-wrapper {
+    max-width: 700px;
+  }
+
+
+  .root-loader {
+    $loader-width: 200px;
+    width: $loader-width;
+    height: 200px;
+    position: absolute;
+    left: calc(50% - #{$loader-width} / 2);
+  }
+
+  .drop-file {
+    position: relative;
+    cursor: pointer;
+    .file-name {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      span:last-child {
+        margin: 0px 20px 10px;
+        font-size: 25px;
+      }
+    }
+    .inputfile {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    border: 2px dashed #68767e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 170px;
+    justify-content: center;
+
+    .plus {
+      $size-plus: 75px;
+      width: $size-plus;
+      height: $size-plus;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../static/add.svg");
+      margin: 40px 20px 20px;
+    }
+    p {
+      color: $app-grey;
+      font-size: 14px;
+    }
+  }
+
+  .custom-checkbox {
+    input:checked ~ .custom-control-label::before {
+      background-color: $app-green;
+      border-color: $app-green-darker;
+    }
+    label {
+      cursor: pointer;
+      margin-left: 1em;
+      &::before, &::after {
+
+        left: -2.5rem;
+      }
+    }
+  }
+
+  .antivirus {
+    user-select: none;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 14px;
+      margin: 30px 0 50px;
+      li{
+        cursor: pointer;
+        &:hover {
+          background-color: #94979829;
+        }
+        $space-li: 15px;
+        //margin-top: $space-li;
+        padding:$space-li 10px;
+        border-bottom: 1px solid #68767e;
+        & > div {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .hour-range {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 10px;
+    max-width: 400px;
+    input[type=range]::-webkit-slider-thumb {
+      background-color: $app-green;
+      border-color: $app-green-darker;
+    }
+
+    .end {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .auto-report {
+    font-size: 14px;
+    .custom-checkbox {
+      margin-left: 30px;
+    }
+
+
+  }
+
+  .auto-report-info {
+    margin: 10px;
+    text-align: justify;
+    background-color: #252831;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .first-operation {
+
+  }
+  .notLogin {
+    p {
+      margin: 0;
+    }
+    margin: 15px 10px;
+    display: none;
+    &.show {
+      display: block;
+    }
+  }
+  .disabled {
+    background-color: $disabled-color;
+    border: 1px solid $disabled-color;
+    color: $app-grey;
+  }
+
+  .success {
+    margin: 30px 0px;
+    button {
+      padding: 10px 15px;
+    }
+  }
+}

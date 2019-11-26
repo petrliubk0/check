@@ -1,0 +1,8 @@
+{
+    "file": "File name",
+    "uploaded": "Uploaded",
+    "checked": "Total checked",
+    "av_name": "Antivirus",
+    "report": "File Report for {{file}}",
+    "av_status": "Status"
+}

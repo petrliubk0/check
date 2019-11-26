@@ -1,0 +1,169 @@
+@import "constants";
+
+
+.ReactModal__Overlay {
+  z-index: 999999999999;
+}
+
+
+.container {
+  h1 {
+    font-weight: 300;
+  }
+
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  .row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    #admin {
+      width: 100%;
+      .admin {
+        width: 100%;
+        display: flex;
+        @import "./user-area/menu";
+        @import "./user-area/reports";
+        .reports {
+          width: 100%!important;
+        }
+
+        .admin-reports {
+          width: 100%;
+        }
+        .upload-to-excel {
+          padding: 20px;
+          margin: 20px 20px 0 40px;
+          background-color: #1d1f26;
+          span {
+            margin-right: 20px;
+          }
+        }
+
+        .administration {
+          .loader {
+            margin: 0 auto;
+          }
+          width: 80%;
+          margin: 20px;
+          margin-left: 0;
+
+          .upload-to-excel {
+            margin-left: 20px;
+          }
+          .statistic, .create-token {
+            padding: 20px;
+            margin: 20px 0;
+            padding-left: 40px;
+            background-color: #1d1f26;
+
+            .info {
+              & > span {
+                font-size: 20px;
+                font-weight: 400;
+                margin-left: -20px;
+              }
+              p {
+                margin: 10px 0;
+                color: #d4d4d4;
+                span {
+                  color: #949798;
+                }
+              }
+            }
+
+          }
+
+          .payments {
+            background-color: #1d1f26;
+          }
+        }
+
+      }
+    }
+
+  }
+}
+
+.pay-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  .option {
+    padding: 6px;
+    line-height: 1;
+    margin: 5px;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+.ReactModal__Content {
+  background: transparent!important;
+  border: 0!important;
+}
+
+.cancel-icon {
+  position: absolute;
+
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+
+.admin-modal {
+  display: flex;
+
+  flex-direction: column;
+  //max-width: 450px;
+  min-width: 275px;
+  z-index: 9999999999;
+
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgb(53, 53, 53);
+  background: rgb(39, 39, 39);
+  color: $app-grey;
+
+  p {
+    span {
+      font-size: 16px;
+    }
+  }
+  &.details {
+    .highlight {
+      display: inline-block;
+      background-color: black;
+      color: #fff;
+      font-size: 90%;
+      font-weight: 400;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+
+
+    .token-form, .result-token  {
+      display: flex;
+      margin: 0 10px;
+      flex-direction: column;
+      .form-group {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+    }
+    button {
+      min-width: 100px;
+      margin: 0 auto;
+    }
+  }
+
+  span {
+    color: $app-grey-second;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}

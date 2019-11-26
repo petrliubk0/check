@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title><%= __('API Docs')%> | <%= HOST %></title>
+    </head>
+<body>
+<% include  widgets/header.ejs %>
+
+<div class="container">
+    <div class="content d-flex justify-content-center">
+        <div class="fine-wrapper text-left bg-semi-black">
+            <div class="row justify-content-center">
+                <div class="">
+                    <div class="app-title">
+                        <h1 class="text-center">
+                            <%= __('API Docs') %>
+                        </h1>
+                    </div>
+                    <p class="p-1 mb-1">
+                            <%- __('apidoc-tor-desc', { escapeInterpolation: false }) %>
+                    </p>
+                
+                    
+                    <p class="mb-5">
+                        <%- __('apidoc-general-desc') %>
+                    </p>
+                    
+                    
+                    <div id="apidoc-items-app-container">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include  widgets/footer.ejs %>
+</body>
+</html>

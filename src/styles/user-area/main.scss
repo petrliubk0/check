@@ -1,0 +1,146 @@
+@import "../constants";
+$disabled-color: rgba(148,151,152,0.16078);
+.cancel-icon {
+  position: absolute;
+
+  right: 10px;
+  top: 15px;
+  cursor: pointer;
+}
+
+ .use-token {
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   max-width: 450px;
+   min-width: 275px;
+   //width: 275px;
+
+   .loader {
+     margin: auto;
+   }
+   div.pay-options {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 15px;
+     .option {
+       padding: 6px;
+       line-height: 1;
+       margin: 5px;
+       user-select: none;
+       cursor: pointer;
+     }
+   }
+
+   .question-change-token {
+     color: $app-grey-second;
+     margin: 10px 0 20px;
+   }
+   .btns {
+     display: flex;
+     justify-content: space-around;
+     button {
+       min-width: 80px;
+     }
+   }
+
+   padding: 20px;
+   margin: 20px;
+   border: 1px solid rgb(53, 53, 53);
+   background: rgb(39, 39, 39);
+
+    span {
+      color: $app-grey;
+    }
+   input {
+     margin: 15px 0;
+   }
+  }
+
+ .ReactModal__Overlay {
+   z-index: 999999999999;
+ }
+
+.ReactModal__Content {
+  background: transparent!important;
+  border: 0!important;
+}
+
+.payObject {
+  display: flex;
+  color: $app-grey;
+  flex-direction: column;
+  .btn-info {
+    color: $app-white;
+    max-width: 200px;
+    margin: 0 auto;
+    min-width: 100px;
+  }
+  .qrCode {
+    margin: 15px;
+    svg {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  p {
+    span {
+      font-size: 16px;
+    }
+  }
+  a {
+    width: fit-content;
+    margin: 0 auto;
+    button{
+      max-width: 300px;
+      margin: 10px 0 20px;
+    }
+  }
+
+
+  .disabled {
+    background-color: $disabled-color;
+    border: 1px solid $disabled-color;
+    color: $app-grey;
+  }
+
+  span {
+    color: $app-grey-second;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+
+.container{
+  h1 {
+    font-weight: 300;
+  }
+
+
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin:0;
+  .row {
+    width:100%;
+    padding: 0;
+    margin:0;
+
+    #user-area {
+      width:100%;
+      .user-area {
+        width: 100%;
+        display: flex;
+        @import "menu";
+        @import "dashboard";
+        @import "payments";
+        @import "reports";
+      }
+    }
+  }
+}
+* {
+  //color: $app-white;
+}

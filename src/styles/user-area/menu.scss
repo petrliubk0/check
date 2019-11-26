@@ -1,0 +1,43 @@
+@import "../constants";
+.menu {
+  height: 500px;
+  min-width: 200px;
+  max-width: 250px;
+  width: 20%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .list-group {
+    .list-group-item {
+      background-color: transparent;
+      display: flex;
+      border: 0;
+      border-radius: 3px;
+      padding: 0.35rem 1.0rem;
+      margin: 0.35em 0;
+      color: $app-grey-second;
+      &:hover {
+        color: $app-white;
+      }
+      .icon {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        background:  $app-grey-second;
+      }
+      &.active {
+        background-color: $app-second-blue;
+        color: $app-white;
+        z-index: 0;
+        .icon {
+          background-color: $app-white;
+        }
+      }
+    }
+  }
+  .upload-file {
+    margin: auto auto 0 auto;
+  }
+}

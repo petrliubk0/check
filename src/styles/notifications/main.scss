@@ -1,0 +1,27 @@
+@import "../constants";
+@import "./bell";
+@import "./notifications-window";
+
+#notifications {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
+  position: relative;
+}
+
+.disabled {
+  &button {
+    background-color: $disabled-color;
+    border: 1px solid $disabled-color;
+    color: $app-grey;
+  }
+  pointer-events: none;
+}
+
+a.disabled {
+  background-color: transparent !important;
+  color: $app-grey !important;
+  pointer-events: none;
+  border: 0 !important;
+
+}

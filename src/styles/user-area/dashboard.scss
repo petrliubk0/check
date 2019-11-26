@@ -1,0 +1,83 @@
+@import "../constants";
+.dashboard {
+  margin: 20px;
+  margin-left: 0;
+  width: 80%;
+  .loader-second {
+    width: 35px!important;
+    height: 35px!important;
+    display: inline-block;
+    position: absolute;
+  }
+
+  .api {
+    .loader-second {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .static-using {
+    .loader-second {
+      top: -5px;
+    }
+  }
+  .coin, .statistic-icon, .api-icon {
+    background-color: $app-grey-second!important;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+  }
+  & > div {
+    padding: 20px;
+    margin: 20px 0;
+    padding-left: 40px;
+    //border-bottom: 1px solid $app-grey;
+    background-color: #1d1f26;
+
+    & > span {
+      font-size: 20px;
+      font-weight: 400;
+      margin-left: -20px;
+    }
+    p {
+      margin: 10px 0;
+      color: #d4d4d4;
+      position: relative;
+      span {
+        color: #949798;
+      }
+      input {
+        margin-top: 5px;
+        &:active {
+          color: $app-grey;
+        }
+        &:focus {
+          color: $app-grey;
+        }
+      }
+    }
+  }
+  a {
+    color: $app-second-blue!important;
+    text-decoration: underline!important;
+    cursor: pointer;
+  }
+  .reset-token {
+    margin-top: 20px;
+
+  }
+
+  .balance {
+    p {
+      margin-left: -20px;
+    }
+
+    //padding-top: 0;
+    margin-top: 0;
+  }
+  .static-using{
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "dashboard": "Дашбоард",
+  "payments": "Платежи",
+  "reports": "История загрузок",
+  "balance": "Баланс",
+  "api": "Api",
+  "yes": "Да",
+  "no": "Нет",
+  "upload_file": "Загрузить файл",
+  "usage_statistics": "Статистика использывания",
+  "token": {
+    "": "Ваш ключ для доступа по api",
+    "reset": "Сгенерировать новый ключ",
+    "change": "Вы действительно хотите сгенерировать новый ключ?",
+    "Must be string of 40 characters length": "Код должен быть длиной до 40 символов"
+
+  },
+  "count_files": "Всего проверено файлов",
+  "month_count_files": "От начала месяца",
+  "you_dont_have_payments_yet": "Вы не совершали оплат",
+  "you_dont_have_reports_yet": "Вы не загружали файлы",
+  "add": "Пополнить",
+  "use-code": "Использовать код",
+  "input-code-payment": "Введите код оплаты",
+  "input-count-money": "Введите суму платежа($)",
+  "amount_usd": {
+    "Must be greater than 0": "Сумма должна быть больше 0",
+    "Must be valid decimal number with 2 decimal places": "Сумма должна быть десятичной цифрой с двумя десятичными знаками"
+  },
+  "payment": "Платеж",
+  "open-in-wallet": "Открыть в кошельке",
+  "btc-pay": "Переведите <span>{{amount}}</span> btc по адресу <span>{{address}}</span>",
+  "btc-pay-info": "Зачисление будет подтверждено после 2-х подтверждений сети Bitcoin",
+  "id": "Номер платежа",
+  "status": "Статус",
+  "date": "Дата создания",
+  "amount": "Сумма",
+  "pay": "Оплатить",
+  "name": "Название",
+  "size": "Размер",
+  "md5": "Хэш",
+  "upload_date": "Дата загрузки",
+  "report": "Отчет",
+  "balance-update": "Ваш счет был пополнен на {{amount}}$",
+  "i-paid": "Я оплатил",
+  "watch_report": "Просмотреть отчет"
+
+}

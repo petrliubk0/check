@@ -1,0 +1,29 @@
+@import "constants";
+
+.custom-select {
+  background-color: #434857;
+  color: #fff;
+  border-color: #434857;
+  font-size: 0.9rem;
+  cursor: pointer;
+  option {
+    cursor: pointer;
+  }
+  &:focus {
+    border-color: #434857;
+    box-shadow: none;
+  }
+}
+
+.loader {
+  position: absolute;
+  left: -15px;
+  top: 34px;
+  z-index: 4;
+}
+
+.disabled {
+  background-color: $disabled-color!important;
+  border: 1px solid $disabled-color!important;
+  color: $app-grey!important;
+}

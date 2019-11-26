@@ -1,0 +1,44 @@
+.ReactTable {
+  .rt-table {
+    .rt-thead {
+      .rt-th {
+        padding: 10px;
+      }
+    }
+
+    .rt-tbody {
+      & > div {
+        //background-color: #434754;
+        &:nth-child(2n-1) {
+          background-color: #434754;
+        }
+      }
+    }
+  }
+}
+
+.ReactTable .-pagination .-previous, .ReactTable .-pagination .-next {
+
+  background-color: #434754;
+}
+
+.show-more {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 15px;
+  span {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+}
+
+.react-table {
+  background-color: #2e313a;
+  padding: 0;
+  border: 0;
+  .pagination-bottom {
+    font-size: 14px;
+  }
+}
